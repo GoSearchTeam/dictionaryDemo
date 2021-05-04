@@ -42,7 +42,7 @@ class Search extends React.Component {
     //<input type="text" value={this.state.value} onChange={this.handleChange} />
     render() {
         return (
-            <div>
+            <div id="search-bar">
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Search Word:

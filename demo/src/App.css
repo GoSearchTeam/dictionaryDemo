@@ -28,11 +28,11 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#search-bar {
+  background-color: grey;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-weight: 400;
 }
