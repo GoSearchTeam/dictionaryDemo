@@ -42,18 +42,21 @@ class Search extends React.Component {
     //<input type="text" value={this.state.value} onChange={this.handleChange} />
     render() {
         return (
-            <div id="search-bar">
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Search Word:
-                        <input value={this.state.value} onChange={this.handleChange} />
-                    </label>
-                    <input type="submit" value="Search" />
-                </form>
-                <div>
+            <div>
+                <div id="search-bar">
+                    <form onSubmit={this.handleSubmit}>
+                        <label>
+                            Search Word:
+                            <input id="input-box" value={this.state.value} onChange={this.handleChange} />
+                        </label>
+                        <input id="search-button" type="submit" value="Search" />
+                    </form>
+                </div>
+                <div id="dict">
                     {this.state.words.map(word => <WordNode word = {word}/>)}
                 </div>
             </div>
+            
             
         )
     }

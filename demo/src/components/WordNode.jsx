@@ -7,8 +7,7 @@ class WordNode extends React.Component {
         console.log(word)
         return (
             <div>
-                <h1>{word.data.word}</h1>
-                <p>{word.data.definition}</p>
+                <p>{word.data.word}: {word.data.definition}</p>
             </div>
         )
     }
